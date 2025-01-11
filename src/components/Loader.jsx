@@ -9,4 +9,4 @@ const Loader = ({ isLoading }) => {
     )
 }
 
-export default Loader
+export default Loader 
