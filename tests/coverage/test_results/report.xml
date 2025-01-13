@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="2" failures="1" errors="0" time="3.189">
+  <testsuite name="Tests &lt;GiftCard /&gt;" errors="0" failures="1" skipped="0" timestamp="2025-01-13T01:26:23" time="2.162" tests="2">
+    <testcase classname="Tests &lt;GiftCard /&gt; Should match to Snapshot" name="Tests &lt;GiftCard /&gt; Should match to Snapshot" time="0.031" file="tests\src\components\GiftCard.test.jsx">
+    </testcase>
+    <testcase classname="Tests &lt;GiftCard /&gt; should show the image with the URL and ALT indicated" name="Tests &lt;GiftCard /&gt; should show the image with the URL and ALT indicated" time="0.005" file="tests\src\components\GiftCard.test.jsx">
+      <failure>TypeError: screen.debug is not a function
+    at Object.debug (D:\Cursos\React\React basic\get-gift-app\tests\src\components\GiftCard.test.jsx:15:12)
+    at Promise.then.completed (D:\Cursos\React\React basic\get-gift-app\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\Cursos\React\React basic\get-gift-app\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (D:\Cursos\React\React basic\get-gift-app\node_modules\jest-circus\build\run.js:316:40)
+    at _runTest (D:\Cursos\React\React basic\get-gift-app\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (D:\Cursos\React\React basic\get-gift-app\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (D:\Cursos\React\React basic\get-gift-app\node_modules\jest-circus\build\run.js:121:9)
+    at run (D:\Cursos\React\React basic\get-gift-app\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (D:\Cursos\React\React basic\get-gift-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (D:\Cursos\React\React basic\get-gift-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (D:\Cursos\React\React basic\get-gift-app\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\Cursos\React\React basic\get-gift-app\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

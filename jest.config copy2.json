@@ -1,0 +1,46 @@
+{
+    "roots": [
+        "src",
+        "tests"
+    ],
+    "testEnvironment": "jest-environment-jsdom",
+    "setupFiles": [
+        "./jest.setup.js"
+    ],
+    "testMatch": [
+        "**/__tests__/**/*.js?(x)",
+        "**/?(*.)+(spec|test).js?(x)"
+    ],
+    "reporters": [
+        [
+            "jest-junit",
+            {
+                "suiteName": "jest tests",
+                "outputDirectory": "./tests/coverage/test_results",
+                "outputName": "report.xml",
+                "addFileAttribute": "true"
+            }
+        ]
+    ],
+    "testResultsProcessor": "jest-junit",
+    "coverageReporters": [
+        "cobertura",
+        "lcov",
+        "text"
+    ],
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+        "src/**/*.{js,jsx,ts,tsx}",
+        "!<rootDir>/node_modules/"
+    ],
+    "coverageThreshold": {
+        "global": {
+            "branches": 90,
+            "functions": 90,
+            "lines": 90,
+            "statements": 90
+        }
+    }
+}
+
+"test-coverage": "jest --collectCoverage --watchAll --coverageDirectory=./tests/coverage --no-cache --reporters=jest-junit"

@@ -1,0 +1,10 @@
+{
+    "testEnvironment": "jest-environment-jsdom",
+    "setupFiles": [
+        "./jest.setup.js"
+    ],
+    "testMatch": [
+        "**/__tests__/**/*.js?(x)",
+        "**/?(*.)+(spec|test).js?(x)"
+    ]
+}

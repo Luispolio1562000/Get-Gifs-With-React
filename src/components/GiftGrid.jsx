@@ -16,7 +16,8 @@ const GiftGrid = ({ category }) => {
           <h2>{category}</h2>
           <div className="card-grid">
             {gifts.map((gift) => (
-              <GiftCard key={gift.id} giftData={gift} {...gift} />
+              //? {...gift}: esparce los atributos del objeto como proptypes.
+              <GiftCard key={gift.id} {...gift} />
             ))}
           </div>
         </div>
